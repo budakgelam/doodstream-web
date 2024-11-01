@@ -23,7 +23,7 @@ const VideoCard = ({ video }: any) => {
             </div>
             <CardContent className="p-1.5">
                 <Link
-                    href={`/v/${video.file_code}/${video.title}`}
+                    href={`/v/${video.file_code}`}
                     className="line-clamp-2 text-sm md:text-md font-semibold hover:text-primary focus:text-primary"
                     aria-label={`Watch ${video.title}`}
                 >
