@@ -9,7 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: 'https://hijabcolmek-dsf.pages.dev/v/${video.file_code}',
+      url: 'https://hijabcolmek-dsf.pages.dev/v/${slug}',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.8,
