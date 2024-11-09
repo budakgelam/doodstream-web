@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 
-const serverUrl = 'http://localhost:3000'
+const serverUrl = 'https://hijabcolmek-dsf.pages.dev/'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
