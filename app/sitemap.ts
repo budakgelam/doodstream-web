@@ -1,17 +1,13 @@
-import type { MetadataRoute } from 'next'
- import { BASE_URL } from '@/app/lib/constants'
+const rootUrl = "http://localhost:3000"
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  return [
-    {
-      url: '${BASE_URL}',
-      lastModified: new Date(),
-      priority: 1,
-    },
-    {
-      url: '${BASE_URL}/v/${video.file_code',
-      lastModified: new Date(),
-      priority: 0.8,
-    },
-  ]
-}
+const blogPosts = blogPostEntries.map((entry: TransformedEntry) => ({
+      url: `${rootUrl}/v/${entry.id}`,
+      lastModified: entry.updatedAt,
+    }))
+
+const routes = ["/", "/v"].map((route) => ({
+      url: `${rootUrl}${route}`,
+      lastModified: new Date().toISOString(),
+    }));
+
+return [...routes, ...blogPosts];
