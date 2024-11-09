@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next'
-import { connectToDatabase } from '@/app/lib/constants'
+import { connectToDatabase } from '@/app'
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
