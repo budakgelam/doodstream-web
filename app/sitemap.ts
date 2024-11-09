@@ -1,17 +1,15 @@
 import type { MetadataRoute } from 'next'
 
-const serverUrl = 'https://hijabcolmek-dsf.pages.dev/'
-
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: '${serverUrl}',
+      url: 'https://hijabcolmek-dsf.pages.dev/',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 1,
     },
     {
-      url: '${serverUrl}/v/${video.file_code}',
+      url: 'https://hijabcolmek-dsf.pages.dev/v/${video.file_code}',
       lastModified: new Date(),
       changeFrequency: 'daily',
       priority: 0.8,
